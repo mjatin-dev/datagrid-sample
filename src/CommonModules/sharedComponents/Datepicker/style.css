@@ -1,0 +1,22 @@
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 30px !important;
+}
+
+.date-picker {
+  background: #f7f7f7 !important;
+  border: none;
+}
+.ant-picker-input > input {
+  font-weight: 400 !important;
+}
+
+
+.taskhistoryfilter{
+
+  background: #fafafa !important;
+  border-radius:.25rem  !important ;
+  padding: .375rem .75rem !important;
+  border: 0px !important;
+  height: 40px;
+  width: 304px !important;
+}

@@ -1,0 +1,138 @@
+.smeOnBoardingMain {
+  .smeFormGroup {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .smeQualification {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .smeOnBoardingOtpVerification {
+    display: flex;
+  }
+  .smeVerificationMain {
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    span {
+      color: #7a73ff;
+    }
+  }
+  .smeOnBoardAddSocialIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    .icons {
+      cursor: pointer;
+      border-radius: 10px;
+      border: 1px solid #e2e2e2;
+      background: #fff;
+      padding: 5px 5px 5px 5px;
+      display: flex;
+      align-items: center;
+      input {
+        border: none;
+        outline: none;
+        text-indent: 10px;
+      }
+    }
+  }
+
+  .smeOTPBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    input {
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      text-indent: 10px;
+    }
+    span {
+      color: #7a73ff;
+    }
+  }
+
+  .smeInputCommon {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+    background-color: #ffffff;
+    font-family: poppins;
+    font-weight: 300;
+    line-height: normal;
+    text-indent: 10px;
+    &:focus {
+      outline: 2px solid #7a73ff;
+      box-shadow: 0 0 4px rgba(165, 165, 165, 0.705);
+    }
+  }
+  .smeEmailFields {
+    width: 65%;
+  }
+  .smeMobileOtpFields {
+    width: 45%;
+  }
+  .smeMobileOtpFieldsCountryCode {
+    width: 20%;
+  }
+  .smeOnBoarFormBtn {
+    display: flex;
+    gap: 20px;
+  }
+  .submitBtn {
+    width: 138px;
+    height: 44px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    background-color: #7a73ff;
+    margin-bottom: 20px;
+  }
+  .submitBtnDisable {
+    width: 138px;
+    height: 44px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    background-color: #7a73ff87;
+    margin-bottom: 20px;
+  }
+}
+.applicationSuccess {
+  h5 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2c2738;
+    margin-top: 20px;
+  }
+  p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2c2738;
+  }
+}

@@ -1,0 +1,15 @@
+.BadgesDiv {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid gray;
+  margin-right: 1rem;
+  border-radius: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.CloseBadge {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}

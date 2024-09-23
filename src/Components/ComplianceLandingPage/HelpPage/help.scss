@@ -1,0 +1,144 @@
+.help-center-page {
+
+    .form-control {
+        height: 60px;
+    }
+
+    .card {
+        width: 100%;
+
+        &:before {
+            content: '';
+            background: transparent;
+        }
+    }
+
+    .search-box {
+        width: 60%;
+        margin: 0 auto;
+        height: 60px;
+    }
+
+
+
+
+    .search-btn {
+        background: linear-gradient(131.72deg, #D7A5FF -1.77%, #7A73FF 114.86%);
+        border-radius: 0px 8px 8px 0px;
+        color: #fff;
+        padding: 10px 65px;
+    }
+
+
+
+    .section-title {
+        background: linear-gradient(131.72deg, #D7A5FF -1.77%, #7A73FF 114.86%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 45px;
+    }
+
+    .open-tab {
+        .title {
+            color: #7A73FF;
+        }
+    }
+
+    .accordion-card {
+        box-shadow: none;
+
+        .d-flex {
+            justify-content: left;
+            align-items: center;
+        }
+
+        .card-title {
+            margin-left: 20px;
+            width: 100%;
+            color: #7A73FF;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 60px rgba(44, 39, 56, 0.06);
+            border-radius: 10px;
+            padding: 15px 10px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+
+
+
+        .counts {
+            color: #7A73FF;
+
+            font-size: 22px;
+            padding: 5px 18px;
+            border: 1px solid #efebeb;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 60px rgba(44, 39, 56, 0.06);
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 0px;
+        }
+
+        .card-body {
+            color: #000000;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 60px rgba(44, 39, 56, 0.06);
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+
+        .collapsed {
+
+            color: #000000;
+
+            .card-title {
+                color: #000000;
+            }
+
+            span {
+                color: #000000;
+            }
+        }
+    }
+
+    .collapse.show {
+        padding-left: 64px;
+    }
+
+    .footer-section {
+        width: 40%;
+        margin: 0px auto;
+        text-align: center;
+
+        .footer-title {
+            color: #000000;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        .footer-desc {
+            color: #000000;
+        }
+    }
+}

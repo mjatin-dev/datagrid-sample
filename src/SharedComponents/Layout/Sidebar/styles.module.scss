@@ -1,0 +1,35 @@
+.leftSiderBardContainer {
+  background-color: #f6f9fb;
+  width: 5vw;
+  height: 100vh;
+  min-width: 50px;
+  max-width: 60px;
+
+  .brandLogo {
+    padding-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    & > img {
+      width: 70%;
+    }
+  }
+
+  .tabsList {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .tabLink {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      & > img {
+        min-width: 16px;
+        width: 20px;
+      }
+    }
+  }
+}

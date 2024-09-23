@@ -1,0 +1,44 @@
+@import "../../assets/styles/colors";
+@import "../../assets//styles/fonts.scss";
+
+.labelContainer {
+  margin-bottom: 3px;
+  .labelSmall {
+    font-size: 12px;
+    color: $color_black_text;
+  }
+  .labelGreyMini {
+    font-size: 12px;
+    color: rgb(156, 156, 156);
+    font-weight: 400;
+    font-family: $font_poppins;
+    text-transform: capitalize;
+  }
+  .labelPrimary {
+    font-size: 13px;
+    color: $color_primary;
+    font-weight: 500;
+    font-family: $font_poppins;
+    text-transform: capitalize;
+  }
+  .labelMedium {
+    font-size: 15px;
+    color: $color_black_text;
+  }
+  .createTemplateLabel {
+    font-size: 12px;
+    color: $color_grey;
+  }
+  .uploadFileLabel {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted $color_primary;
+
+    .uploadIcon {
+      color: $color_primary;
+      font-size: 16px;
+    }
+  }
+}

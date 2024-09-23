@@ -1,0 +1,74 @@
+@import "../../assets//styles//colors.scss";
+.content {
+  // width: 100%;
+  // height: 100%;
+  padding: 0 1rem;
+  // overflow-x: auto;
+}
+.header {
+  border-bottom: 2px solid rgba(179, 171, 196, 0.4);
+  .tab {
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $color_light_black;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(252, 252, 252);
+    }
+    transition: all 0.5s ease;
+
+    &.tabActive {
+      color: $color_primary;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        animation: activeTabLine 0.2s;
+        -webkit-animation: activeTabLine 0.2s;
+        -moz-animation: activeTabLine 0.2s;
+        height: 2px;
+        background-color: $color_primary;
+      }
+    }
+    @keyframes activeTabLine {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  }
+}
+.remarkCard {
+  background: rgb(241, 243, 255);
+  margin-top: 20px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  .title {
+    font-size: 16px;
+    color: #7a73ff;
+  }
+}
+.remarkTitle {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 10px;
+}
+.remarkDesc {
+  font-size: 14px;
+  color: gray;
+  padding: 0px 10px;
+}
+.pointerNone {
+  pointer-events: none;
+}

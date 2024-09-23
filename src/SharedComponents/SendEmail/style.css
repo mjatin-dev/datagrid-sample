@@ -1,0 +1,200 @@
+.sendEmailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  /* margin-right: 48px;
+  padding: 10px 40px 10px 0px; */
+}
+.closeBtn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.no-detail {
+  height: 20px;
+  width: auto;
+  margin: auto;
+}
+
+.depBox,
+.userBox {
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+  box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+  border-radius: 10px;
+  width: 555px;
+  height: 400px;
+  margin-left: 20px;
+}
+.depTitle,
+.userTitle {
+  padding: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.userSelectAllBtn {
+  background: #7a73ff;
+  margin: 0 15px 15px;
+  border-radius: 6px;
+  border: none;
+  height: 20px;
+  width: 80px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.userList,
+.depList {
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.depListItem,
+.userListItem {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 5px 0;
+  color: #3d3d3d;
+  margin: 5px 15px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+}
+.sendBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.sendMailBtn {
+  background: #7a73ff;
+  border-radius: 8px;
+  border: none;
+  width: 150px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.viewBtn {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #7a73ff;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #7a73ff;
+}
+.text {
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.checkBox {
+  margin-left: 10px;
+  height: 15px;
+  width: 18px;
+}
+
+.userHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addUserBtn {
+  cursor: pointer;
+  height: 30px;
+  width: 110px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 27px;
+  color: #7a73ff;
+}
+.emailContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+}
+
+.addUserEmail {
+  padding: 0;
+  width: 200px;
+  height: 36px;
+  margin-right: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.addUserEmail input {
+  flex: auto;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  border: none;
+  max-width: calc(100% - 30px);
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #aeaeae;
+}
+
+.addUserEmail input:hover,
+.addUserEmail input:focus {
+  border: 0px;
+  outline: 0;
+  box-shadow: none;
+}

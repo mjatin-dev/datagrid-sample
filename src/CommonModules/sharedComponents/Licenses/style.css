@@ -1,0 +1,121 @@
+.license-box-container {
+  position: absolute;
+  width: 90%;
+  min-width: 240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.license-box-detail-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 3rem);
+  margin-inline: auto;
+  border-bottom: 1px solid #eee8fc;
+}
+
+.license-box-rows {
+  grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+  display: grid;
+  gap: 1rem;
+  overflow: hidden auto;
+  max-height: 55vh;
+  padding: 1.5rem;
+}
+.columns {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0px 10px;
+  background: #efeeff;
+  border-radius: 10px;
+}
+
+.columns-active {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background: #7a73ff;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+.columns p {
+  color: #7a73ff;
+}
+
+.columns svg {
+  color: #7a73ff;
+}
+
+.columns-active p {
+  color: #ffffff;
+}
+.columns-active svg {
+  color: #ffffff;
+}
+
+.license-add-button button {
+  width: 272px;
+  height: 54px;
+  border-radius: none;
+  background: #7a73ff;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+}
+
+.columns-license {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 5px;
+  background: #ffffff;
+  box-shadow: 0px 3px 20px rgb(44 39 56 / 6%);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.columns-deactive-license {
+  display: none;
+}
+
+.license-box-content {
+  overflow: hidden;
+  max-height: 90vh;
+  min-height: 50vh;
+}
+
+.business___Category__text__alignment {
+  font-size: 15px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .license-box-rows {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .columns-license {
+    width: 100%;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../../assets/styles/colors";
+@import "../../../../assets/styles/mixins.scss";
+.header {
+  // border-bottom: 2px solid rgba(179, 171, 196, 0.4);
+  width: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e7e7e7;
+  .tab {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $color_light_black;
+    cursor: pointer;
+    // &:hover {
+    //   background-color: rgb(252, 252, 252);
+    // }
+    transition: all 0.5s ease;
+
+    &.tabActive {
+      // color: $color_primary;
+      color: #fff;
+      background-color: #7a73ff;
+      border-radius: 8px;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: -2px;
+      //   left: 0;
+      //   width: 100%;
+      //   animation: activeTabLine 0.2s;
+      //   -webkit-animation: activeTabLine 0.2s;
+      //   -moz-animation: activeTabLine 0.2s;
+      //   height: 2px;
+      //   // background-color: $color_primary;
+      // }
+    }
+    @keyframes activeTabLine {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  }
+}

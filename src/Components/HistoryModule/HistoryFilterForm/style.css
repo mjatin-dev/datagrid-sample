@@ -1,0 +1,70 @@
+.history-side-bar {
+  display: flex;
+}
+.history-container {
+  object-fit: contain;
+  border-radius: 36px;
+  box-shadow: 0 3px 36px 0 rgb(67 0 255 / 8%);
+  background-color: #ffffff;
+  position: relative;
+  height: 100vh;
+  margin: 20px;
+  padding: 48px 0;
+  width: 100%;
+  max-width: calc(100% - 64px);
+}
+
+.SbPara {
+  max-width: 240px;
+  display: block;
+  opacity: 0.6;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+}
+
+h2.main-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h2.main-title img {
+  margin: 0 0 0 10px;
+}
+
+.filter-button {
+  border: none;
+  color: #aeaeae;
+  margin-top: 10px;
+  margin-top: 30px;
+  padding: 6px 0px;
+  font-size: 12px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+.filter-button.filter-button__outlined {
+  border: 1px solid #6c5dd3;
+  background-color: #fff;
+  color: #6c5dd3;
+}
+.filter-button.filter-button__primary {
+  border: 1px solid #6c5dd3;
+  background: #6c5dd3;
+  color: #fff;
+  border: none;
+}
+
+.spacing {
+  margin-top: 20px;
+}
+.warning {
+  color: red;
+  font-size: 0.8rem;
+}

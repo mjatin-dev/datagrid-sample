@@ -1,0 +1,416 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+label {
+  font-size: 14px !important;
+}
+label.required {
+  position: relative;
+}
+label.required::after {
+  content: " *";
+  color: red;
+}
+input[type="number"]:disabled {
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 1;
+}
+/* .dx-command-select{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+} */
+
+.bottom-right-bg {
+  position: fixed;
+  width: 500px;
+  bottom: -151px;
+  right: -240px;
+}
+.on-boarding {
+  background-image: linear-gradient(0deg, #a329ff, #14cfff);
+}
+.on-boarding img {
+  opacity: 0.6;
+}
+.center {
+  text-align: center;
+}
+.common-button {
+  border-radius: 4px !important;
+  background-color: #6c5dd3 !important;
+  height: 43px;
+  text-transform: uppercase !important;
+}
+.common-button:hover {
+  background-color: #8680ff !important;
+  color: white !important;
+}
+.common-button:focus:not(:focus-visible) {
+  outline: 0;
+  background-color: #000000 !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.input-error {
+  border: 2px solid #ef5d5d !important;
+}
+
+.input-error-message {
+  padding-top: 5px;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ef5d5d;
+  width: 250px;
+}
+.co-dashboard .on-boarding {
+  background-image: none;
+}
+
+.on-boarding .left-bar img {
+  opacity: 1;
+}
+
+.Toastify__toast-body {
+  font-family: Poppins;
+  padding: 0px;
+}
+.Toastify__toast--error {
+  background: #ffb2b2 !important;
+  color: #000 !important;
+  width: auto;
+  height: auto;
+  padding: 12px 16px 14px;
+  border-radius: 4px;
+  /* background-color: #f0efff; */
+  /* margin: 3px 32px 0 8px; */
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  /* text-align: right; */
+  /* color: #5d6370; */
+}
+/* .Toastify__toast .Toastify__toast--success {
+  background-color: red !important;
+} */
+.Toastify__toast--success {
+  background: #ebe8ff !important;
+  color: #000 !important;
+  /* padding: 0 0 16px; */
+  border-radius: 4px;
+  box-shadow: 0 3px 12px 0 rgba(159, 159, 159, 0.16);
+}
+.auto-toster-viewmore {
+  margin: 8px 1px 0 0px;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6c5dd3;
+}
+.Toastify__close-button {
+  color: #000 !important;
+}
+.Toastify__close-button > svg {
+  color: #000 !important;
+}
+
+.success-form-control {
+  width: 358px;
+  height: 40px;
+  border-radius: 8px;
+  border: solid 2px #7fba7a;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000;
+}
+span.font-normal {
+  font-weight: normal;
+}
+.auto-toster-text {
+  width: 200px;
+  height: auto;
+  margin: 0 38px 0px 8px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #5d6370;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 90%;
+  }
+  .custom-container {
+    max-width: 1150px;
+  }
+}
+.cutom-add-whatsappflag {
+  position: absolute;
+  left: 0 !important;
+  z-index: 1 !important;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 1 !important;
+  top: 0px !important;
+}
+* {
+  scrollbar-width: thin !important;
+}
+:root {
+  scrollbar-color: #d5d5d5 transparent;
+}
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+.Toastify__toast--info {
+  background: #eae8ff !important;
+}
+
+#dataGrid {
+  height: auto;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.dx-datagrid-header-panel .dx-toolbar {
+  padding: 20px;
+}
+
+.dx-datagrid-group-panel .dx-group-panel-message {
+  margin-left: -7px;
+}
+.dx-row.dx-header-row {
+  background-color: #7a73ff !important;
+  border-radius: 8px;
+  color: #fff;
+}
+.dx-datagrid-rowsview .dx-row > td {
+  overflow: visible;
+}
+.initial-name__container {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f1f3ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.initial-name__container .initial-name {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 8px;
+  text-align: center;
+  color: #0000008d;
+  width: 24px;
+}
+
+.header-title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.01px;
+  text-align: left;
+  color: #000000;
+}
+
+.text-muted {
+  font-size: 14px;
+  color: gray !important;
+}
+.css-g1d714-ValueContainer {
+  height: auto !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* to hide spinner of input type field number from chrome and other  */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* to hide spinner of input type field number from firefox  */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Date Picker Week  */
+.ant-picker-week-panel
+  .ant-picker-body
+  table.ant-picker-content
+  > thead
+  > tr
+  > th:first-child {
+  display: none !important;
+}
+td.ant-picker-cell.ant-picker-cell-week {
+  display: none;
+}
+
+.MuiSpeedDial-fab {
+  background: #7a73ff !important;
+}
+
+[aria-label="OK"] {
+  background: #7a73ff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  border: 0;
+  color: #ffffff;
+}
+
+[aria-label="OK"] :hover {
+  background: #372def !important;
+  border-radius: 8px !important;
+  font-family: Poppins;
+}
+
+[aria-label="Cancel"] {
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #7a73ff;
+  color: #7a73ff;
+}
+.ant-picker-clear {
+  right: 2rem;
+  color: #7a7a7a;
+}
+.ant-picker-suffix {
+  margin-left: 1rem;
+}
+
+.rdw-link-modal {
+  height: auto !important;
+}
+.rdw-link-modal-target-option {
+  display: flex;
+  align-items: center;
+}
+.rdw-link-modal-buttonsection .rdw-link-modal-btn:first-child {
+  background: #7a73ff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  border: 0;
+  color: #ffffff;
+}
+
+.rdw-link-modal-buttonsection .rdw-link-modal-btn:nth-child(2) {
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #7a73ff;
+  color: #7a73ff;
+}
+
+body > iframe[style*="2147483647"] {
+  display: none;
+}
+
+.auditDevexCustomizations {
+  .dx-datagrid .dx-checkbox-container {
+    width: auto !important;
+  }
+  .dx-datagrid .dx-header-filter {
+    color: #fff !important;
+  }
+
+  .dx-header-filter.dx-header-filter-empty {
+    color: #ccc !important;
+  }
+
+  .dx-datagrid .dx-column-indicators {
+    /* float: right; */
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+}
+
+#custom-audit-column-chooser .dx-list-select-all-label {
+  margin-left: 0px;
+  cursor: pointer;
+}

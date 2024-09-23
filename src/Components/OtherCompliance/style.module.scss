@@ -1,0 +1,148 @@
+.otherCompliance {
+  .leftNavigationBar {
+    background-color: #fff;
+    height: 100vh;
+
+    .leftNavigationBarItem {
+      padding: 1rem;
+      border-bottom: 1px solid #eaeaea;
+      cursor: pointer;
+      &.leftNavigationBarItemActive {
+        background-color: #e9e8ff;
+        border-right: 3px solid #7a73ff;
+      }
+      &.leftNavigationBarHeaderTitle {
+        padding: 1.5rem 1rem;
+        cursor: auto;
+      }
+
+      h4,
+      h6 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .otherComplianceDataTable {
+    .tableHeaderContainer {
+      background-color: #e9e8ff;
+      border-radius: 8px;
+      padding: 0.75rem;
+      .tableHeaderColumnTitle {
+        color: #7a73ff;
+      }
+      margin-top: 1.5rem;
+    }
+    .tableRow {
+      margin-bottom: 1rem;
+    }
+    .tableDataRow {
+      padding: 0.75rem;
+      box-shadow: 0px 4px 8px rgba(99, 99, 99, 0.06);
+      border-radius: 8px;
+    }
+
+    .licenseCheckboxContainer {
+      border: 1px solid #e2e2e2;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+
+      & > label {
+        font-size: 14px;
+        font-weight: normal;
+        color: #3d3d3d;
+      }
+    }
+    .dataText {
+      font-size: 14px;
+      font-weight: normal;
+      color: #3d3d3d;
+      margin-bottom: 0;
+    }
+    .licenseListGrid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .complianceStatusInput {
+      background-color: #e9e8ff;
+      max-width: 160px;
+    }
+    .tableInput {
+      width: 100%;
+      min-width: 100%;
+    }
+    .button {
+      width: fit-content;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border-radius: 0.4rem;
+      padding: 0.35rem 0.75rem;
+    }
+    .smallIconButton {
+      font-size: 1rem;
+    }
+  }
+  .searchInputContainer {
+    position: relative;
+    width: 455px;
+    float: right;
+    height: 47px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    border-radius: 8px;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #aeaeae;
+
+    .searchInput {
+      height: 47px;
+      padding: 0.5rem 2rem;
+      border-radius: 6px;
+      font-family: Poppins;
+      font-size: 13px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0;
+      text-align: left;
+      color: #535353;
+      width: 100%;
+      // border: none;
+      outline: none;
+      border: 2px solid gray;
+      transition: border 0.2s ease;
+
+      &::placeholder {
+        color: #000000;
+      }
+
+      &:focus {
+        border: solid 2px #6c5dd3;
+      }
+    }
+
+    .searchIcon {
+      position: absolute;
+      top: 50%;
+      left: 0.5rem;
+      transform: translateY(-50%);
+      font-size: 1.25rem;
+      color: #000000;
+    }
+
+    .closeSearchIcon {
+      position: absolute;
+      top: 50%;
+      right: 0.5rem;
+      transform: translateY(-50%);
+      font-size: 1.25rem;
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+}

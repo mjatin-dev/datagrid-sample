@@ -1,0 +1,61 @@
+@import "../../assets//styles//colors.scss";
+
+.customDataCell {
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+
+  &.customDataCellLinkColor {
+    color: rgba(28, 136, 246, 1);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.viewAnsButton {
+  text-align: -webkit-center;
+}
+
+.submitedFilesContainer {
+  max-height: 72px;
+  overflow: auto;
+}
+
+.submitedFilesContainerForAuditee{
+  max-height: 100px;
+  overflow: auto;
+  /* width: 100%; */
+  width: 64vw;
+}
+
+.submitedDoc {
+  // width: 134px;
+  width: 100%;
+  min-width: 100px;
+  height: 30px;
+  min-height: 30px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 3px 20px rgba(44, 39, 56, 0.06);
+  border-radius: 6px;
+  cursor: pointer;
+
+  .fileIcon {
+    width: 10px;
+    margin-right: 0.5rem;
+  }
+
+  .fileName {
+    font-size: 12px;
+
+    &.fileCount {
+      font-size: 13px;
+      margin-left: 0.5rem;
+      color: $color_primary;
+      font-weight: 500;
+    }
+  }
+}

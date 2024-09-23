@@ -1,0 +1,34 @@
+@import "../../assets/styles/colors.scss";
+
+.headingContainer {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.heading {
+  margin-right: auto;
+}
+
+.createTemplateFields {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-top: 15px;
+}
+
+.outputValues {
+  //  padding-left: 60px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-bottom: 5px;
+}
+.horizontalLine {
+  width: 100%;
+  height: 2px;
+  background-color: $color_light_grey;
+  margin-bottom: 2rem;
+}
+.horizontalLine:last-child {
+  display: none;
+}

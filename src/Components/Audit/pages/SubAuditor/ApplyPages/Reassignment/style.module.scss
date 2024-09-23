@@ -1,0 +1,65 @@
+@import "../../../../assets/styles/colors";
+
+.topHeading {
+  border-bottom: 1px solid $color_light_black;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px,
+}
+.closeLeaveButton {
+  margin-left: 2px;
+  width: 0%;
+  height: 35px;
+  font-size: x-large;
+  margin-top: -40px;
+  border: none !important;
+  background-color: $color_white;
+  justify-content: flex-end;
+}
+.label{
+    display: block;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 15px;
+    color: #1f2025;
+}
+
+.inputfields{
+    display: flex;
+}
+
+.errors{
+    color: $color_warning_text;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+   
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFFFFF;
+        box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+        border-radius: 20px;
+        padding: 20px;
+        height:100%;
+        width: 100%;
+        overflow: auto;
+    }
+    .inputfields{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

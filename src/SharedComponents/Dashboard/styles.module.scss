@@ -1,0 +1,247 @@
+.dashboardHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 1rem 0;
+  padding: 0 2rem;
+  height: 47px;
+
+  .dashboardHeaderTitle {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.01px;
+    color: #000000;
+    margin-bottom: 0;
+    opacity: 0.4;
+    cursor: pointer;
+
+    &.dashboardHeaderTitleActive {
+      color: #000000;
+      opacity: 1;
+    }
+  }
+}
+
+.searchIcon {
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.searchInputContainer {
+  position: relative;
+  width: 455px;
+  float: right;
+  height: 47px;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  border-radius: 8px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #aeaeae;
+
+  .searchInput {
+    height: 47px;
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    text-align: left;
+    color: #535353;
+    width: 100%;
+    // border: none;
+    outline: none;
+    border: 2px solid #000000;
+    transition: border 0.2s ease;
+
+    &::placeholder {
+      color: #000000;
+    }
+
+    &:focus {
+      border: solid 2px #6c5dd3;
+    }
+  }
+
+  .searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: #000000;
+  }
+
+  .closeSearchIcon {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+
+.dashboardTabsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid #eee8fc;
+  margin: 1rem auto auto;
+  width: calc(100% - 4rem);
+
+  .dashboardTabTitle {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    cursor: pointer;
+    color: rgba(179, 171, 196, 0.7);
+    width: fit-content;
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+    position: relative;
+
+    &.dashboardTabTitle__active {
+      color: #000000;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #7a73ff;
+      }
+    }
+  }
+}
+
+.dashboardViewByFiltersContianer {
+  .dashboardViewByFiltersList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem 0 1rem 0;
+    padding: 0 2rem;
+  }
+
+  .dashboardViewByFilterTitle {
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  .dashboardViewByFilterItem {
+    color: #000000;
+    border-radius: 16px;
+    background-color: #f7f4fe;
+    padding: 2.5px 8px;
+    font-size: 10px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.dashboardViewByFilterItem__active {
+      background-color: #000000;
+      color: #fff;
+    }
+  }
+}
+
+.dashboardMainContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 68vh;
+  padding: 0 2rem;
+}
+
+.content {
+  margin: 0 20px;
+  padding: 35px 0 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 20px;
+    padding: 22px 0 0;
+  }
+}
+
+.header {
+  border-bottom: 2px solid rgba(179, 171, 196, 0.4);
+
+  .tab {
+    display: inline-block;
+    position: relative;
+    margin-right: 1.5rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(252, 252, 252);
+    }
+
+    transition: all 0.5s ease;
+
+    &.tabActive {
+      color: #7a73ff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        animation: activeTabLine 0.2s;
+        -webkit-animation: activeTabLine 0.2s;
+        -moz-animation: activeTabLine 0.2s;
+        height: 2px;
+        background-color: #7a73ff;
+      }
+    }
+
+    @keyframes activeTabLine {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.appColor {
+  background-color: #6c5dd3;
+}

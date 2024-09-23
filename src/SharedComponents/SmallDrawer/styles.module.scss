@@ -1,0 +1,19 @@
+.filterView {
+  box-shadow: rgba(0, 0, 0, 0.7) 1px 1px 9999px 9999px;
+  // background-image: url("/static/media/filter_background.d624499e.png");
+  background-position: right -157px bottom -155px;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+filterContainer {
+  width: 400px;
+  height: 100vh;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: absolute;
+  right: -450px;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}

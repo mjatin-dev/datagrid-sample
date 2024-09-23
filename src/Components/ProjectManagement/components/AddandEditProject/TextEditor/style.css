@@ -1,0 +1,39 @@
+.add-project-text-editor {
+  margin: auto;
+  width: 100%;
+  /* margin-top: 8px; */
+  justify-content: center;
+  background: rgba(122, 115, 255, 0.16);
+  /* border-radius: 6px; */
+}
+
+.add-project-tex-editor-wrapper {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.add-project-editor-box {
+  height: 300px;
+  padding: 0.25rem 0.75rem;
+  max-height: 720px;
+  resize: vertical;
+}
+.toolbar__icon {
+  background-color: transparent;
+  border: none;
+}
+.toolbar__icon:hover,
+.toolbar__icon:active {
+  box-shadow: none;
+  background-color: #e2e2e2;
+}
+.toolbar__dropdown-container {
+  background-color: transparent;
+  box-shadow: none;
+}
+.toolbar__dropdown-container:hover {
+  background-color: #e2e2e2;
+  box-shadow: none;
+}

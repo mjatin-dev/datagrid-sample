@@ -1,0 +1,522 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/mixins.scss";
+
+::placeholder {
+  font-family: $font_poppins;
+  padding: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  text-transform: none;
+  padding: 0.5rem;
+  transition: all 0.1s ease;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+select:not([disabled]):focus,
+select:not([disabled]):active {
+  background-image: url("../../../../assets/Icons/up-arrow.svg");
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: $color_primary;
+  transition: 1s;
+  height: 35px;
+  color: $color_white;
+  border: none;
+}
+
+.inputWrapper {
+  @include alignBoxWithFlex(center, start);
+}
+
+.default {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.task-model {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+.task-model-big {
+  border-radius: 8px;
+  border: 1px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  padding: 1rem;
+  line-height: normal;
+}
+.radio {
+  width: 70px;
+  height: 25px;
+  border-radius: 8px;
+
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.small {
+  width: 150px;
+  height: 40px;
+
+  border-radius: 8px;
+  border: 2px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.medium {
+  width: 358px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.days {
+  width: 358px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: -10px;
+}
+
+.larger {
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.auto {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+  padding: 10px;
+}
+
+.auditAssignmentInput,
+.auditAssignmentInputWhite,
+.auditAssignmentInputBlue,
+.auditAssignmentInputOutlined,
+.checklistInput,
+.commentInput {
+  min-width: 220px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: $color_light_text;
+  line-height: normal;
+  background-color: $color_light_grey;
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 20px;
+
+  &:focus {
+    outline: 2px solid $color_blue;
+    box-shadow: 0 0 4px rgba(165, 165, 165, 0.705);
+  }
+
+  & {
+    min-width: 100%;
+    border: 1px solid #e2e2e2;
+  }
+
+  .auditAssignmentInputWhite::placeholder,
+  .auditAssignmentInput::placeholder {
+    color: rgb(196, 196, 196);
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .auditAssignmentInputBlue::placeholder,
+  .auditAssignmentInput::placeholder {
+    color: rgba(122, 115, 255, 0.16);
+    font-weight: normal;
+    text-transform: none;
+  }
+}
+
+.auditAssignmentInputWhite,
+.auditAssignmentInputOutlined,
+.checklistInput {
+  background-color: #fff;
+}
+
+.auditAssignmentInputBlue,
+.auditAssignmentInputOutlined,
+.checklistInput {
+  // background-color: rgba(122, 115, 255, 0.16);
+  background-color: rgb(255, 255, 255);
+}
+
+.auditAssignmentInputOutlined:focus,
+.checklistInput:focus {
+  outline: 2px solid $color_blue;
+  box-shadow: 0 0 4px rgba(165, 165, 165, 0.705);
+}
+
+.auditAssignmentInputOutlined,
+.checklistInput {
+  min-width: 120px;
+  height: 38px;
+}
+
+.checklistInput,
+.auditAssignmentInput,
+.auditAssignmentInputOutlined {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.tableDataSelectInput {
+  max-width: 140px;
+  width: 120px;
+  font-size: 12px;
+  font-weight: 400;
+  color: $color_primary;
+  line-height: normal;
+  background-color: #e9e8ff;
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.outline {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid $color_light_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.outline:focus-visible {
+  outline: none !important;
+}
+
+.outline::placeholder {
+  font-size: 20px;
+}
+
+.fileContainer {
+  max-height: 100px;
+  overflow: auto;
+  padding-right: 0.5rem;
+
+  .fileName {
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .removeFileButton {
+    color: $color_primary;
+    cursor: pointer;
+  }
+}
+
+.labelContainer {
+  margin-bottom: 3px;
+
+  .labelSmall {
+    font-size: 12px;
+    color: $color_black_text;
+  }
+
+  .labelGreyMini {
+    font-size: 12px;
+    color: rgb(156, 156, 156);
+    font-weight: 400;
+    font-family: $font_poppins;
+    text-transform: capitalize;
+  }
+
+  .labelPrimary {
+    font-size: 13px;
+    color: $color_primary;
+    font-weight: 500;
+    font-family: $font_poppins;
+    text-transform: capitalize;
+  }
+
+  .labelMedium {
+    font-size: 15px;
+    color: $color_black_text;
+  }
+
+  .createTemplateLabel {
+    font-size: 12px;
+    color: $color_grey;
+  }
+
+  .uploadFileLabel {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted $color_primary;
+
+    .uploadIcon {
+      color: $color_primary;
+      font-size: 16px;
+    }
+  }
+
+  .uploadFileLabelBig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted $color_primary;
+    height: 120px;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.textArea {
+  border-radius: 5px;
+  width: 100%;
+  border: 0px;
+  background-color: $color_gery_background;
+  color: $color_black_text;
+  font-weight: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.auditTemplate {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0px;
+  background-color: $color_gery_background;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  color: $color_black_text;
+  font-weight: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.searchBox {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $color_medium_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.datePicker {
+  //border-radius: 15px;
+}
+
+.inputForSearchAssignment {
+  border: none;
+  outline: none;
+  margin-top: 0px;
+  color: $color_black_text;
+  height: 30px;
+  margin-left: 50px;
+  // text-align:500v;
+}
+
+.createCompanyInputs {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $color_medium_grey;
+  background-color: $color_white;
+  font-family: $font_poppins;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px;
+}
+
+//   text-align:500v;
+// }
+
+//apply for Reassignment in sub-auditor&auditee
+.temp_nam {
+  margin: 0;
+  width: 265px;
+  padding: 11px;
+  margin-left: 2px;
+  margin-top: -20px;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  color: $color_black_text;
+  font-weight: 500;
+  outline-color: cornflowerblue;
+  border: 1.5px solid #e2e2e2;
+  box-sizing: border-box;
+}
+
+.que_details {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  width: 545px;
+  padding: 11px;
+  margin-left: 2px;
+  margin-top: -20px;
+  border-radius: 10px;
+  outline-color: cornflowerblue;
+  border: 1.5px solid #e2e2e2;
+  box-sizing: border-box;
+}
+
+.areatext {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  background-color: $color_gery_background;
+  color: $color_black_text;
+  font-weight: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fullDay {
+  margin-left: -168px;
+  font-size: larger;
+  width: 300px;
+}
+
+.firstHalfDay {
+  margin-left: -40px;
+  font-size: xx-large;
+  margin-top: -83px;
+  width: 50px;
+}
+
+.informName {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  width: 560px;
+  padding: 11px;
+  margin-left: 2px;
+  margin-top: -20px;
+  border-radius: 10px;
+  outline-color: cornflowerblue;
+}
+
+.autoGrowInput {
+  word-wrap: break-word;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  height: auto;
+  overflow: auto;
+  max-height: 200px;
+}
+
+.labelMultipleAssignment {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px !important;
+  line-height: 27px;
+  color: #000000;
+}
+
+.inputMultipleAssignment {
+  width: 300px;
+  height: 40px;
+  box-shadow: 0px 3px 20px rgba(44, 39, 56, 0.06);
+  border-radius: 10px;
+  color: $color_light_text;
+  line-height: normal;
+  border: none;
+  outline: none;
+
+  &:focus {
+    outline: 2px solid $color_blue;
+    box-shadow: 0 0 4px rgba(165, 165, 165, 0.705);
+  }
+}
+
+.labelMultipleAssignmentAudit {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 15px;
+  color: #000000;
+}
+
+.inputMultipleAssignmentAudit {
+  width: 180px;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0px 8px;
+}

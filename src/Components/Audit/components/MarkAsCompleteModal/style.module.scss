@@ -1,0 +1,230 @@
+@import "../../assets//styles/colors.scss";
+
+.topLeaveHeading {
+  border-bottom: 1px solid $color_light_black;
+}
+
+.closeLeaveButton {
+  margin-left: 2px;
+  width: 0%;
+  height: 35px;
+  font-size: x-large;
+  margin-top: -40px;
+  border: none !important;
+  background-color: $color_white;
+  justify-content: flex-end;
+}
+
+.dayType {
+  margin-top: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.radioButton {
+  margin-top: -41px;
+  margin-left: 5px;
+}
+
+.FullDay {
+  margin-left: 20px;
+  font-size: xx-large;
+}
+
+.FirstHalfDay {
+  margin-left: 150px;
+}
+
+.date {
+  margin-left: -15px;
+}
+
+.dateFirst {
+  margin-left: 268px;
+  margin-top: -50px;
+}
+
+.dateToText {
+  margin-top: -20px;
+}
+
+.dateText {
+  margin-top: -20px;
+}
+
+.edit_date {
+  display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.edit_input {
+  width: 250px;
+  margin-left: 0px;
+  height: 50px;
+  background: $color-white;
+  border: 1px solid $color_medium_grey;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.edit_first_input {
+  width: 250px;
+  height: 50px;
+  background: $color-white;
+  border: 1px solid $color_medium_grey;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.add_inform_name {
+  margin-top: 12px;
+}
+
+.reson_leave {
+  margin-top: 20px;
+  width: 98%;
+}
+
+.reson {
+  margin-top: -20px;
+}
+
+.btnLeaveCancal {
+  margin-top: -45px;
+  margin-left: 65px;
+  color: $color_blue;
+}
+
+.btnLeavesubmition {
+  margin-left: 65px;
+  margin-top: 32px;
+  color: $color-white;
+  font-size: large;
+  cursor: pointer;
+  border-color: none;
+}
+
+.tag_container {
+  border: 1px solid $color_medium_grey;
+  opacity: 0.9;
+  padding: 0.7rem;
+  border-radius: 3px;
+  width: 565px;
+  // height: 50px;
+  margin-top: 2px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag_items {
+  background-color: rgb(218, 216, 216);
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  margin-top: 0em;
+}
+
+.tag_items .close {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(48, 48, 48);
+  color: $color-white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input_tag {
+  flex-grow: 1;
+  padding: 0.5em 0.75em;
+  border: none;
+  outline: none;
+  height: 20px;
+  width: 110px;
+  margin-left: -6px;
+}
+
+.leavDrop {
+  height: 60px;
+  border: dashed 1px $color_grey;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.textDrop {
+  margin-top: 10px;
+}
+
+// .closeBtn{
+//   margin-left: 50px;
+// }
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $color_white;
+  box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color_white;
+    box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .topLeaveHeading {
+    width: -80px;
+  }
+
+  .topHeading {
+    width: auto;
+  }
+
+  .dateFirst {
+    margin-left: -50px;
+    margin-top: 20px;
+  }
+
+  .dateToText {
+    margin-left: -320px;
+    margin-top: 40px;
+  }
+
+  .btnLeaveCancal {
+    margin-left: -205px;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  .tag_container {
+    width: 300px;
+  }
+}

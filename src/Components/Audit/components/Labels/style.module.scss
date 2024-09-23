@@ -1,0 +1,31 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+
+.small {
+  font-size: 10px;
+  font-family: $font_sans_serif;
+  color: $color_grey;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+
+.medium {
+  font-size: 15px;
+  font-family: $font_sans_serif;
+  color: $color_grey;
+}
+
+.createTemplateLabel {
+  font-size: 12px;
+  color: $color_grey;
+}
+
+.dropdownLabel {
+  margin-bottom: 3px;
+  font-size: 12px;
+  color: $color_black_text;
+}

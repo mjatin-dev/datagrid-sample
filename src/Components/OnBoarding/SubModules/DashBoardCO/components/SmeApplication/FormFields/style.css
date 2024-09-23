@@ -1,0 +1,175 @@
+.sme-menu-items {
+  width: 195px;
+  border: "1px solid #EFEFEF";
+  border-radius: 8px;
+  margin-left: -145px;
+  margin-top: 13px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.sme-checkbox-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.checkbox-button {
+  border-color: #7a73ff;
+  background-color: #fff;
+  color: #7a73ff;
+  border-style: none;
+  border-radius: 8px solid;
+  padding: 6px 10px;
+  border: 2px solid;
+  border-radius: 8px;
+  height: 50px;
+  width: max-content;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: baseline;
+  border: 2px solid #b4abc4;
+  padding: 15px 70px 15px 15px;
+  justify-content: unset;
+  width: auto;
+  height: 50px;
+  border-radius: 10px;
+  gap: 3px;
+}
+
+.dropdown-option {
+  width: 238px;
+  height: 50px;
+  top: 300px;
+  left: 571px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  outline: none;
+  text-indent: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: #7a73ff;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #7a73ff;
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+input[type="checkbox"]:disabled {
+  color:lightgray;
+  cursor: not-allowed;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.select-optionBox {
+  position: absolute;
+  background: #fff;
+  top: 50px;
+  width: 306px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  border-top: none;
+  max-height: 200px;
+  gap: 5px;
+  z-index: 99999;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+.selectInputBox {
+  width: 306px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select-arrow{
+  cursor: pointer;
+  margin-right: 10px;
+}
+.span-col{
+  grid-column: 1 / span 2 !important;
+}
+.AdressInputs{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+.placeholder-text {
+  font-family: Poppins;
+
+  margin-left: 10px;
+  color: #2c2738;
+}
+.option {
+  display: flex;
+  align-items: center;
+}
+.option span {
+  margin-left: 8px;
+}
+ 
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  border: none;
+  border-color: transparent;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector:hover {
+  border: none;
+  border-color: transparent;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector .css-14jk2my-container{
+  border: none;
+  border-color: transparent;
+}
+.ant-select:not(.ant-select-customize-input):hover .ant-select-selector:hover {
+  border: none;
+  border-color: transparent;
+}
+.css-1fhf3k1-control{
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  height: 50px;
+}

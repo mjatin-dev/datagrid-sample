@@ -1,0 +1,73 @@
+.suggestionBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.suggestionHeading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.headingText {
+  font-size: 24px;
+}
+.suggestionTopic,
+.suggestionDescription {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.inputDescription,
+.inputTopic {
+  padding: 5px;
+  width: 320px;
+  height: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.inputDescription {
+  height: 100px;
+}
+
+.subbmitButton {
+  background: #7a73ff;
+  border: 1px solid #7a73ff;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.35rem 1rem;
+  width: fit-content;
+}
+
+.suggestion__cancel__btn{
+  border: 1px solid #7a73ff;
+  color: #7a73ff !important;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.35rem 1rem;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.suggestion__bts{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}

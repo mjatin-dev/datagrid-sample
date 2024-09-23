@@ -1,0 +1,12 @@
+export const SET_DAY = "SET_DAY";
+export const GET_DAY = "GET_DAY";
+export const SET_WEEK = "SET_WEEK";
+export const GET_WEEK = "GET_WEEK";
+export const SET_MONTH = "SET_MONTH";
+export const GET_MONTH = "GET_MONTH";
+export const SET_LOADING = "SET_LOADING";
+export const SET_SUCCESS = "SET_SUCCESS";
+export const CLEAR_STATE = "CLEAR_STATE";
+export const SET_ACTIVE_FLAG = "SET_ACTIVE_FLAG";
+export const SET_FILTERS = "SET_FILTERS";
+export const IS_LOADING = "SET_IS_LOADING";

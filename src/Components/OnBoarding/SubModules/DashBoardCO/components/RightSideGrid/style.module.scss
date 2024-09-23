@@ -1,0 +1,61 @@
+.content {
+  margin: 0 48px;
+  padding: 35px 0 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 20px;
+    padding: 22px 0 0;
+  }
+}
+
+.header {
+  border-bottom: 2px solid rgba(179, 171, 196, 0.4);
+
+  .tab {
+    display: inline-block;
+    position: relative;
+    margin-right: 1.5rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(252, 252, 252);
+    }
+
+    transition: all 0.5s ease;
+
+    &.tabActive {
+      color: #7a73ff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        animation: activeTabLine 0.2s;
+        -webkit-animation: activeTabLine 0.2s;
+        -moz-animation: activeTabLine 0.2s;
+        height: 2px;
+        background-color: #7a73ff;
+      }
+    }
+
+    @keyframes activeTabLine {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  }
+}

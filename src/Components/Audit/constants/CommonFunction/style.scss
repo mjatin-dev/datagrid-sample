@@ -1,0 +1,55 @@
+.balckTextCell {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    text-transform: capitalize;
+  }
+
+  .customHeaderCell {
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    // margin-right: 1rem;
+  }
+
+
+  .customDataCell {
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: normal;
+    // text-align: center;
+    color: #000000;
+  
+    &.customDataCellLinkColor {
+      color: rgba(28, 136, 246, 1);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  
+
+
+  .audit__columna__auto {
+    display: flex;
+  }
+  .audit__columna__auto p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    text-transform: capitalize;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    position: relative;
+    margin-right: 10px;
+  }

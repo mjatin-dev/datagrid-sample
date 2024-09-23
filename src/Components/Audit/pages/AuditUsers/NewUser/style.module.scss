@@ -1,0 +1,60 @@
+@import "../../../assets//styles//colors.scss";
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.closeBtn {
+  text-align: right;
+}
+
+.label {
+  display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 15px;
+  color: #1f2025;
+}
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.inputfields {
+  display: flex;
+}
+
+.errors {
+  color: $color_warning_text;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  .inputfields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

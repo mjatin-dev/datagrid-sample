@@ -1,0 +1,30 @@
+@import "../../assets//styles/colors.scss";
+.container{
+    padding: 10px;
+    
+}
+
+.default{
+    width: 100%;
+    height: 200px;
+    border: dashed 1px $color_grey;
+}
+
+.img{
+    margin: 60px auto;
+    text-align: center;
+}
+
+.uploadFileText{
+    color: $color_blue;
+}
+.fileBox{
+    height: 100px;
+}
+.leaveDrop{
+    height: 80px;
+    border: dashed 1px $color_grey;
+}
+.leavImage{
+    margin-left: 150px;
+}

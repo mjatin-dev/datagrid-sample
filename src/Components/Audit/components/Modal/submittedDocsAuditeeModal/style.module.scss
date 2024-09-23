@@ -1,0 +1,31 @@
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    width:70vw;
+    height:60vh;
+}
+
+.closeBtn{
+    display: flex;
+    justify-content: baseline !important;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B3ABC4;
+    button{
+        margin-left: auto;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.auditee__questionAnswers__box{
+    height: 50vh;
+    overflow: auto;
+}

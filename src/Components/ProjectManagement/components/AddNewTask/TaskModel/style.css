@@ -1,0 +1,229 @@
+.add-edit-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-edit-project-content {
+  width: 900px;
+  height: 80%;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+  border-radius: 20px;
+  overflow: auto;
+  padding: 20px;
+}
+/* .add-edit-main-container {
+  padding: 20px 20px 20px 20px;
+  overflow-y: auto;
+  height: 644px;
+} */
+
+.add-edit-project-labels {
+  display: block;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.add-edit-project-inputs {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.add-edit-project-inputs-task-duretion {
+  width: 50%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.add-edit-project-submit-btn {
+  width: 180px;
+  height: 44px;
+  background: #7a73ff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+  color: #ffffff;
+}
+.add-edit-project-cancel-btn {
+  width: 180px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #7a73ff;
+  color: #7a73ff;
+}
+
+.add-new-subtask-fileDropZone {
+  border: 1px dashed #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.add-new-subtask-fileDropZone-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+.add-new-task-radio-btn {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* padding-left: 35px; */
+}
+
+.add-new-task-radio-weekly-btn {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* padding-left: 35px; */
+}
+
+.add-edit-project-notify-btn {
+  width: 100px;
+  height: 30px;
+  background: #7a73ff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  border: 0;
+  color: #ffffff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.add-edit-project-notify-active-btn {
+  width: 140px;
+  height: 30px;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  border: 0;
+  color: black;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.add-new-task-radio-weekly-btn h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: all 0.3s ease;
+}
+.add-task-weekly-day-selection {
+  background: #7a73ff;
+  border-radius: 6px;
+  /* margin-top: 5px; */
+  color: white !important;
+}
+.project__actions {
+  gap: 1rem;
+}
+.project__actions button {
+  font-size: 1rem;
+  width: 100%;
+}
+.project__information-container {
+  background: #ffffff;
+  box-shadow: 0px 3px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+.project__information-container p,
+.project__information-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+.project__information-text.project__information-text--active {
+  color: #7a73ff;
+  font-size: 14px;
+}
+@media (max-width: 767.98px) {
+  .add-edit-project-content {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+    border-radius: 20px;
+    overflow: auto;
+    padding: 20px;
+  }
+}
+.add-project-err-msg {
+  font-size: 0.6rem;
+  color: rgba(255, 30, 30, 0.801);
+  font-weight: normal;
+  line-height: 0.8rem;
+  margin-top: 0.5rem;
+}
+.task-modal__week-day {
+  height: 32px !important;
+  width: 32px !important;
+  transition: all 0.2s ease;
+}
+.task-modal__week-day--selected {
+  background-color: #7a73ff !important;
+}
+
+.week-day__name {
+  font-size: 0.8rem !important;
+  color: #7a73ff !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+.task-modal__week-day--selected .week-day__name {
+  color: #fff !important;
+}
+
+.new-label {
+  padding: 0px;
+  margin: 0px;
+  color: red;
+  float: right;
+}

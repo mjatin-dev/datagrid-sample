@@ -1,0 +1,22 @@
+.leftBarContainer {
+  min-width: calc(100% - 75%);
+  background-color: #fff;
+  width: fit-content;
+  flex: 0.25;
+}
+.scrollTaskDetailsActions {
+  overflow: hidden auto;
+  width: 100%;
+}
+
+.taskCloseIcon {
+  top: -13px;
+  right: 10px;
+  position: absolute;
+}
+.licenseAndStatusContainer {
+  position: absolute;
+  height: 40px;
+  left: 0;
+  bottom: -20px;
+}

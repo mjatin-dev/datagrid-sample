@@ -1,0 +1,20 @@
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px 5px 30px 30px;
+    height: 400px;
+    // overflow: auto;
+    .close {
+      text-align: end;
+      padding-right: 30px;
+    }
+    .allocationBox {
+      height: 340px;
+      overflow-x: auto;
+    }
+  }

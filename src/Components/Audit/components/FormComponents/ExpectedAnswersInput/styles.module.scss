@@ -1,0 +1,52 @@
+@import "../../../assets//styles/colors.scss";
+.expectedAnswers {
+  width: inherit;
+
+  .expectedAnswersValues {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .expectedAnswersValue {
+      margin: 0.5rem 0.75rem 0.5rem 0;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      background-color: #f6f9fb;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      & > span {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .expectedAnswersInput {
+    min-width: 240px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color_light_text;
+    line-height: normal;
+    background-color: $color_light_grey;
+    border: none;
+    outline: none;
+    padding: 0.6rem 0.5rem;
+    border-radius: 4px;
+
+    &:focus {
+      outline: 2px solid $color_blue;
+      box-shadow: 0 0 4px rgba(165, 165, 165, 0.705);
+    }
+    &::placeholder,
+    &::placeholder {
+      color: rgb(196, 196, 196);
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+  .expectedAnswersInputLabel {
+    font-size: 12px;
+    color: #1f2025;
+  }
+}

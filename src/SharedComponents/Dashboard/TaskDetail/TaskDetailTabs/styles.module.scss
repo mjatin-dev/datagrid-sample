@@ -1,0 +1,88 @@
+.fileUploadBox {
+  border: 1px dashed rgba(27, 29, 33, 0.34);
+  width: 100%;
+
+  .uploadFilesText {
+    color: #7a73ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+.fileListContainerGrid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  column-gap: 0.5rem;
+}
+
+.nameInitials {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px !important;
+}
+.fileTitleText {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0.025rem;
+}
+.nameText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+.fileTimestampText {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: normal;
+  color: gray;
+}
+.fileIcon {
+  font-size: 1rem;
+}
+
+.imageIcon {
+  width: 14px;
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+
+.impactContainer {
+  p {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+}
+p.instructionMessage {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ff5858;
+  margin: 0.5rem 0;
+}
+.fileDetailsBoxContainer {
+  width: 240px;
+  box-shadow: 0px 3px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  height: 48px;
+  .fileIconContainer {
+    width: 24px;
+  }
+  .fileName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #3d3d3d;
+    max-width: 128px;
+  }
+  .fileSize {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #c2c2c2;
+  }
+}

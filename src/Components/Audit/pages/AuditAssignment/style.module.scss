@@ -1,0 +1,426 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/mixins.scss";
+
+.auditAssignment {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 36px;
+
+  .auditHeader {
+    padding: 0.75rem 1.5rem 1.5rem;
+
+    .auditHeaderButtonContainer {
+      @include alignBoxWithFlex(center, space-between);
+      margin-bottom: 0.5rem;
+    }
+
+    .stepperContainer {
+      &>div {
+        margin-bottom: 1.5rem !important;
+        margin-right: 1.5rem;
+
+        &>div>p {
+          font-size: 10px;
+          // width: 150px;
+          background-color: #fff;
+        }
+
+        &>div>img {
+          height: 18px;
+        }
+      }
+    }
+
+    .auditHeaderBorder {
+      height: 2px;
+      width: 100%;
+    }
+  }
+
+  .auditAssignmentMain {
+    width: 100%;
+    overflow: auto;
+    padding: 0 1.5rem 1.5rem;
+  }
+}
+
+.header {
+  border-bottom: 2px solid rgba(179, 171, 196, 0.4);
+
+  .tab {
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $color_light_black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(252, 252, 252);
+    }
+
+    transition: all 0.5s ease;
+
+    &.tabActive {
+      color: $color_primary;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color_primary;
+      }
+    }
+  }
+}
+
+.inputRow {
+  @include alignBoxWithFlex(baseline, space-between);
+  width: 50%;
+  flex-wrap: wrap;
+  .flex6 {
+    flex: 0.48;
+    margin-bottom: 1rem;
+  }
+
+  .flex12 {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+}
+
+.inputRowSpacing {
+  margin-bottom: 2rem;
+}
+
+.inputRowSpacingTeamSection {
+  margin-bottom: 5px;
+}
+
+.buttonContainer {
+  padding: 0.5rem 1.5rem;
+}
+
+.questionnaireForm {
+  border: none;
+
+  width: 100%;
+  overflow: auto hidden;
+  border-radius: 8px;
+
+  .questionnaireFormHeader {
+    @include alignBoxWithFlex(center, space-between);
+    background-color: $color_primary_background;
+    padding: 0.5rem 1rem;
+    width: 100%;
+
+    &>p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .questionnaireFormHeaderOptions {
+      @include alignBoxWithFlex(center, end);
+      flex: 1;
+
+      & label {
+        margin-bottom: 0;
+        margin-left: 0.75rem;
+      }
+
+      & input[type="checkbox"] {
+        min-width: 20px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      & button {
+        border-width: 1px;
+        border-style: solid;
+        min-width: fit-content;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 13px;
+        height: auto;
+        font-weight: normal;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  }
+
+  .questionnaireFormMain {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 1rem;
+    background-color: $color_secondary_background;
+  }
+}
+
+.questionnaireFormTable {
+  width: 100%;
+
+  .questionnaireFormSectionName {
+    @include alignBoxWithFlex(start, start);
+
+    &>p {
+      margin-bottom: 0;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .questionnaireFormDeadline {
+    margin-right: 2rem;
+
+    & select {
+      min-width: 80%;
+      width: 80%;
+      margin-right: auto;
+    }
+  }
+}
+
+td {
+  padding: 1rem 0;
+}
+
+.questionnaireFormAssignTo {
+  @include alignBoxWithFlex(center, start);
+}
+
+.userTag {
+  border: none;
+  background-color: $color_white;
+  border-radius: 2.5rem;
+  width: fit-content;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+
+  & p {
+    color: $color_primary;
+    font-weight: 600;
+  }
+}
+
+.userTagSelected {
+  border: 1.75px solid $color_primary;
+  background-color: $color_primary_background;
+}
+
+.inputGroupRowReverse {
+  @include alignBoxWithFlex(center, center, row-reverse);
+  margin-right: 1.5rem;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0;
+}
+
+.dataRow {
+  @include alignBoxWithFlex(center, space-between);
+  width: 100%;
+  margin: 0.75rem 0;
+
+  .keyBox {
+    flex: 0.3;
+  }
+
+  .valueBox {
+    flex: 1;
+
+    &>p {
+      color: rgba(0, 0, 0, 0.781);
+    }
+  }
+
+  & p {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 13px;
+  }
+}
+
+.reviewDetailsHeadingContainer {
+  @include alignBoxWithFlex(center, space-between);
+  width: 100%;
+}
+
+.rightAlign {
+  justify-content: flex-end !important;
+}
+
+.flex1 {
+  flex: 0.25;
+}
+
+.flex2 {
+  flex: 0.5;
+}
+
+.flex3 {
+  flex: 0.75;
+}
+
+.flex4 {
+  flex: 1;
+}
+
+.createMultipleAssignment {
+  display: flex !important;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.slider {
+  margin-top: -18px;
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 15px;
+    background: #e9e8ff;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  label:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background: #7a73ff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+
+  input:checked+label {
+    background: #e9e8ff;
+  }
+
+  input:checked+label:after {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  label:active:after {
+    width: 25px;
+  }
+}
+
+.break {
+  opacity: 0.4;
+  border: 1px solid #000000;
+  margin-top: 20px;
+}
+
+.errorContainer {
+  background: #e9e8ff;
+  border-radius: 10px;
+
+  h5 {
+    padding: 10px 5px 0px;
+    color: #7a73ff;
+  }
+}
+
+.errorMessage {
+  background: #f2d1d1;
+  padding: 10px 25px 0px 10px;
+
+  p {
+    margin: 0px;
+    padding: 0px;
+    color: red;
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
+}
+
+.multipleAssignmentDetail {
+  width: 100%;
+  border-collapse: collapse;
+
+  th:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  th:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+
+  thead {
+    background: #7a73ff;
+    border-radius: 12px;
+
+    th {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 30px;
+      color: #ffffff;
+      padding: 15px 5px;
+      align-items: left;
+    }
+  }
+}
+
+.downloadTemplate {
+  border-radius: 0.4em;
+  height: 2.625em;
+  width: 12.125em;
+  font-size: 1em;
+  line-height: 1.1875em;
+  font-style: normal;
+  font-weight: 500;
+  background: #6c5dd3;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  box-shadow: 0px 3px 36px rgba(67, 0, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px,
+}
+
+.closeBtn {
+  text-align: right;
+}

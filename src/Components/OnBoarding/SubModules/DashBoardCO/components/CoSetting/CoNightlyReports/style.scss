@@ -1,0 +1,93 @@
+.night_reports_columnHeaderTitle {
+  font-size: 12px;
+  margin-bottom: 0;
+  text-align: left !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+}
+
+.night_reports_customDataCell {
+  font-family: "Poppins";
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: #000000;
+}
+
+.night_reports_date_picker {
+  border-radius: 6px;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+  display: block;
+  padding: 0.38rem;
+  border: 2px solid #e2e2e2;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  border-right-width: 2px !important;
+  font-size: 14px;
+}
+
+.night_reports_contMainBox {
+  //used grid for safari support
+  display: grid;
+  grid-gap:1rem; /* Safari 10-11 */
+  gap: 1rem;
+  grid-auto-flow: column;
+  .night_reports_countOuter {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    span {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #f1f3ff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Poppins;
+      font-size: 10px;
+      font-weight: 500;
+      font-style: normal;
+      opacity: 0.9;
+    }
+  }
+}
+
+.nightly__jobs__reset__button {
+  border: 1px solid #6c5dd3;
+  background-color: #fff;
+  color: #6c5dd3;
+  min-height: 35px;
+  border-radius: 5px;
+  min-width: 70px;
+}
+
+#nightlyJob_devx {
+  .dx-toolbar {
+    padding: 0px 0px;
+  }
+  .dx-checkbox-container {
+    width: auto !important;
+  }
+  .dx-datagrid .dx-header-filter {
+    color: #fff !important;
+  }
+
+  .dx-header-filter.dx-header-filter-empty {
+    color: #ccc !important;
+  }
+  td {
+    border: none;
+  }
+}

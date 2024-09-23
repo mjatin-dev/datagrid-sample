@@ -1,0 +1,233 @@
+.cardsJumbotron {
+  background: #EFF5FB;
+  // position: absolute;
+  height: 300px;
+}
+
+.bg-gradient {
+  // background: #EFF5FB;
+  width: 100%;
+  padding: 50px 0px;
+  margin-bottom: -75px;
+  background-image: url('../../../assets/Images/home/g-bg.png');
+  background-size: 100% 100%;
+
+  @media (max-width: 600px) {
+    padding: 0px;
+  }
+}
+
+.headingPricing {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+  padding-top: 100px;
+
+  @media (max-width: 600px) {
+    padding: 70px 0px 20px 0px;
+  }
+}
+
+.cards {
+  padding: 0px 20px 100px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  // margin-top: -120px;
+
+
+}
+
+.card {
+  width: 350px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 60px rgba(44, 60, 83, 0.06);
+  $border: 1.5px;
+  color: #FFF;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid $border transparent;
+  /* !importanté */
+  border-radius: 14px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(93.96deg, #56AAFF 0%, #FF7B95 40.85%, #FFA760 87.76%);
+  }
+}
+
+.cardTopBorder {
+  background: linear-gradient(131.72deg, #D7A5FF -1.77%, #7A73FF 114.86%);
+  height: 12px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.card .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 50px;
+  background-color: #f7f8fc;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .cardHeadingTitle {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 42px;
+}
+
+.card .headingUnderLine {
+  width: 54px;
+  height: 0px;
+  border: 0.1px solid #000000;
+  margin-top: 0.1px;
+}
+
+.card .header h2 {
+  color: #10182f;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+.card .priceTag {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  text-align: center;
+  background: linear-gradient(131.72deg, #9691FF -1.77%, #2E9AFF 114.86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0px;
+}
+
+.card .annualCategory {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.card .header .btn:hover {
+  background-color: #0a0f1e;
+}
+
+.card .features {
+  // padding: 30px 30px 0px 30px;
+  padding: 30px;
+  margin-bottom: 0px;
+}
+
+.card .features li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 22px;
+}
+
+.card .features li:last-child {
+  margin-bottom: 0;
+}
+
+.card .features li img {
+  width: 15.63px;
+  margin-right: 10px;
+}
+
+.card .features li p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.card .features li p span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.card .tagsBorderBottom {
+  width: 256px;
+  height: 0px;
+  border: 0.1px solid #7A73FF;
+  margin-top: 0.1px;
+}
+
+.card .addMoreUser {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  background: linear-gradient(131.72deg, #D7A5FF -1.77%, #7A73FF 114.86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+
+  .cards {
+    padding: 100px 0px 0px 0px;
+  }
+
+  .card {
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .card .features {
+    padding: 30px;
+  }
+}

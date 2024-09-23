@@ -1,0 +1,899 @@
+.ApplicationForm-main-div {
+  background-color: white;
+  border-radius: 30px;
+  padding: 0px;
+  margin: 30px;
+  height: 92vh;
+  overflow-y: scroll;
+}
+.smeToggleButtonBox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #e7e7e7;
+  border-radius: 8px;
+  margin-left: 30px;
+  width: 364px;
+}
+.smeFormButton,
+.smeTemplateButton {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 50px;
+  padding: 10px 16px;
+  color: "#000000";
+  cursor: pointer;
+  width: 182px;
+  border-radius: 8px;
+  text-align: center;
+}
+.smeFormButtonActive,
+.smeTemplateButtonActive {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 50px;
+  padding: 10px 16px;
+  cursor: pointer;
+  width: 182px;
+  border-radius: 8px;
+  color: "#ffffff";
+  background-color: "#7A73FF";
+  text-align: center;
+}
+.smeApplicationTitle-div {
+  height: 48px;
+  /* padding: 1.5rem 2rem 0; */
+  margin-bottom: 40px;
+}
+
+.ApplicationForm-table-header {
+  margin-top: 20px;
+  text-align: inherit;
+  align-items: inherit;
+  padding: 17px;
+}
+.smeToggleButtonBox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #e7e7e7;
+  border-radius: 8px;
+  margin-left: 30px;
+  width: 364px;
+}
+.smeFormButton,
+.smeTemplateButton {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 50px;
+  padding: 10px 16px;
+  color: "#000000";
+  cursor: pointer;
+  width: 182px;
+  border-radius: 8px;
+  text-align: center;
+}
+.smeFormButtonActive,
+.smeTemplateButtonActive {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 50px;
+  padding: 10px 16px;
+  cursor: pointer;
+  width: 182px;
+  border-radius: 8px;
+  color: "#ffffff";
+  background-color: "#7A73FF";
+  text-align: center;
+}
+
+.smeApplicationTitle {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.01px;
+  text-align: left;
+  color: #000000;
+  margin-left: 5px;
+}
+
+.application-bca-btn {
+  background: #e9e8ff;
+  border: none;
+  color: #7a73ff;
+  margin-left: 10px;
+  width: 75px;
+  height: 32px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.application-mca-btn {
+  background: #e9e8ff;
+  border: none;
+  color: #7a73ff;
+  margin-left: 10px;
+  width: 75px;
+  height: 32px;
+  font-family: "Poppins";
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.detail-application-main-div {
+  background-color: white;
+  border-radius: 30px;
+  padding: 0px;
+  margin: 30px;
+  height: 92vh;
+  overflow-y: scroll;
+}
+
+.detail-application-head-div {
+  height: 48px;
+  padding: 2rem 2rem 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-step-div {
+  width: calc(100% - 4rem);
+  margin: auto;
+  border: 1px solid #e2e2e2;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qulification-div {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin: 7px;
+}
+
+.pdf-file-img {
+  width: 23px;
+  height: 25px;
+  margin: 10px;
+}
+
+.social-media-div {
+  width: calc(100% - 4rem);
+  margin: auto;
+  border: 1px solid #e2e2e2;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.requirement-note-p {
+  color: #b3abc4;
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.requirement-li {
+  color: #b3abc4;
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 16px;
+  margin-right: 12px;
+  line-height: 24px;
+}
+
+.requirement-li-2 {
+  color: #2c2738;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.requirement-see-more {
+  color: #7a73ff;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.Send-requirements-btn {
+  background-color: #7a73ff;
+  width: 276px;
+  margin-left: 40%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 44px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.comment-model-div {
+  background-color: white;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.comment-text-area {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+}
+
+.model-jc-div {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #f6f5ff;
+  padding: 5px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.comment-model-p {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b3abc4;
+  margin-left: 10px;
+  margin-top: 5px;
+
+  display: inline-block;
+  width: 280px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.comment-model-date {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b3abc4;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.smeDetailBtn {
+  width: 138px;
+  height: 44px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-left: 15px;
+}
+
+.smeDetailKey-p {
+  color: #b3abc4;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  align-items: center;
+  justify-content: start;
+  line-height: 24px;
+  display: flex;
+}
+
+.smeDetailColon {
+  color: #b3abc4;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 15px;
+  align-items: center;
+  justify-content: start;
+  line-height: 24px;
+  display: flex;
+}
+
+.smeDetailValue-p {
+  font-weight: 400;
+  margin: 0;
+  align-items: center;
+  justify-content: start;
+  line-height: 24px;
+  display: flex;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  height: 100%;
+}
+.smeDetail-hr {
+  height: 43px;
+  width: 1px;
+  background-color: #e2e2e2;
+  margin-top: 8px;
+}
+
+.requirement-style03-input {
+  height: 26px;
+  width: 99%;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 0px;
+}
+
+.requirement-question-input {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  margin-left: 10px;
+  border: 1px solid #e2e2e2;
+}
+
+.smeDeatail-Btn {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7a73ff;
+  border: none;
+  font-weight: 500;
+  background-color: white;
+}
+
+.smetooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.smetooltip .smetooltiptext {
+  visibility: hidden;
+  width: 420px;
+  height: 120px;
+  background-color: #f6f5ff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 10%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: 1px solid #7a73ff;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 15px;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+.add-comment-modal {
+  background-color: white;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.smetooltip .smetooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f6f5ff transparent transparent transparent;
+  border: 1px solid #7a73ff transparent transparent transparent;
+}
+
+.smetooltip:hover .smetooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.smeSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 30px;
+  width: 90%;
+  margin-left: 5px;
+}
+
+.smeSlider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #7a73ff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .smeSlider {
+  background-color: rgba(122, 115, 255, 0.2);
+}
+
+input:focus + .smeSlider {
+  box-shadow: 0 0 1px #7a73ff;
+}
+
+input:checked + .smeSlider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.smeSlider.round {
+  border-radius: 34px;
+}
+
+.smeSlider.round:before {
+  border-radius: 50%;
+}
+
+.newRequirement-p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 24px;
+}
+
+.menuNewRequirement {
+  font-family: "Poppins";
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: "24px";
+  color: black;
+}
+
+.menuNewRequirement:hover {
+  color: #7a73ff;
+  background-color: white;
+}
+
+.menuStyle {
+  width: 220px;
+  height: 110px;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+}
+
+.menuStyle:hover {
+  background-color: #f6f5ff;
+}
+
+.formComponent-MainDiv {
+  max-width: 285px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100vh;
+}
+
+.formComponent-Title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 28px;
+  padding: 25px;
+  margin-bottom: 0px;
+}
+
+.drag-drop-para {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Poppins;
+  line-height: 22px;
+  color: #c2c2c2;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.form-tab-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 33px;
+  font-family: Poppins;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 0px;
+  text-align: left !important;
+  cursor: pointer;
+  color: #2c2738;
+  background: none;
+}
+
+.hr-line {
+  color: "#EAEAEA";
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.new-req-box {
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.requirement-title {
+  background-color: white;
+  border-radius: 30px;
+  padding: 0px;
+  margin: 15px;
+  width: 100%;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.newRequirement-div {
+  height: 48px;
+  padding: 2rem 2rem 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-div {
+  margin: 0 2rem;
+  border-radius: 10px;
+}
+.error-message {
+  height: 100px;
+  overflow-y: auto;
+  padding-left: 35px;
+  border: 1px solid red;
+  border-radius: 7px;
+  margin: 0px 30px;
+  padding-top: 11px;
+}
+.error-message p {
+  margin: 0px;
+}
+
+.preview-btn-requirement {
+  width: 138px;
+  height: 44px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-left: 15px;
+  background-color: #7a73ff;
+}
+
+.questionName-div {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4rem);
+  margin: auto;
+  margin-top: 10px;
+}
+
+.questionName-p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 24px;
+  padding: 5px;
+}
+
+.questionName-input {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 13px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 24px;
+  outline: none;
+}
+
+.short-answer-p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.short-answer-input {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  height: 50px;
+  width: 70%;
+  padding: 13px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 24px;
+  outline: none;
+}
+
+.SelectorOption {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  outline: none;
+}
+
+.InputNumberDiv {
+  width: 150px;
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  outline: none;
+}
+
+.CustumErrorText-input {
+  width: 150px;
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  outline: none;
+}
+
+.patternInputDiv {
+  width: 150px;
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  margin-left: 40px;
+  outline: none;
+}
+
+.addQuestion-para {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-decoration: underLine;
+  line-height: 27px;
+  color: #7a73ff;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+.radioLadel-style {
+  font-family: "Poppins";
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 27px;
+  margin-left: 5px;
+}
+
+.radio-Div {
+  border: 1px solid #e2e2e2;
+  width: 238px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.Add-Radio-btn {
+  border: 1px solid #7a73ff;
+  width: 158px;
+  height: 50px;
+  color: #7a73ff;
+  border-radius: 8px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.requirement-send-btn {
+  border: none;
+  width: 180px;
+  height: 44px;
+  color: white;
+  border-radius: 8px;
+  background-color: #7a73ff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.requirement-cancel-btn {
+  border: 1px solid #7a73ff;
+  width: 180px;
+  height: 44px;
+  color: #7a73ff;
+  border-radius: 8px;
+  background-color: white;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.menuStyle2 {
+  width: 300px;
+  height: 110px;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.menuStyle2:hover {
+  background-color: #f6f5ff;
+}
+
+.back-arrow-div {
+  background-color: white;
+}
+
+.back-arrow-div:hover {
+  border-radius: 100%;
+  width: 32px;
+  height: 34px;
+  box-shadow: rgba(152, 152, 152, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.form-builder-main-container {
+  height: 70vh;
+}
+
+.sme__newRequiremnets__main {
+  height: calc(100vh - 10rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.sme_newRequiremnets_btns {
+  border-top: 1px solid #eaeaea;
+  padding: 5px;
+  text-align: left;
+}
+
+.sme__dropZone {
+  height: 80px;
+  border: 2px dotted #7a73ff;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sme__dropZoneBox {
+  height: auto;
+}
+.sme__dropZone_p {
+  color: #7a73ff;
+  margin-bottom: 0px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.comment-model-p .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.comment-model-p:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.fileDownloadButton {
+  height: 40px;
+  min-width: 230px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #f3f3f3;
+  display: flex;
+  width: auto;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.attachmentScroll {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+   height: 100%;
+   max-width: 600px;
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+.flex-rows {
+  display: flex;
+  align-items: center;
+}

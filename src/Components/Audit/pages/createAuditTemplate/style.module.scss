@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+
+.commonContainer {
+    padding: 10px;
+}
+.inputContainer {
+    padding: 10px;
+}
+
+.questionContainer {
+    padding: 10px;
+   
+}
+
+.saveTemplate {
+    button {
+      margin-top: 20px;
+    }
+  }

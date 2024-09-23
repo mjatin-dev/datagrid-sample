@@ -1,0 +1,120 @@
+.frequencyModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 3px 36px rgb(67 0 255 / 5%);
+  border-radius: 0.75rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.frequency-submit-btn {
+  width: 50px;
+  height: 30px;
+  background: #7a73ff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: center;
+  border: 0;
+  color: #ffffff;
+}
+.frequency-cancel-btn {
+  width: 50px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #7a73ff;
+  color: #7a73ff;
+}
+
+.frequency-fonts {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #2c2738;
+}
+
+.frequency-weeks {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 3px 20px rgb(44 39 56 / 6%);
+  border-radius: 10px;
+  padding: 0px 12px;
+  margin-bottom: 10px;
+}
+
+.frequecny-active {
+  background: #7a73ff;
+  border-radius: 6px;
+  color: white;
+  padding: 2px;
+  margin: 4px 0px;
+}
+
+.frequecny-inactive {
+  margin: 4px 0px;
+  cursor: pointer;
+}
+
+.frequecny-input {
+  width: 31.51px;
+  height: 34.88px;
+  background: #ffffff;
+  border: 1px solid #aeabab;
+  border-radius: 6px;
+}
+
+.frequency-select {
+  width: 115px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+.frequecny-textarea {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.notify-me-options p {
+  margin: 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.notify-me-input {
+  width: 41.51px;
+  height: 34.88px;
+  background: #ffffff;
+  border: 1px solid #aeabab;
+  border-radius: 6px;
+}
+
+.notify-active {
+  background: #E2E2E2;
+  border: 1px solid #E2E2E2;
+  border-radius: 2px;
+  padding: 2px;
+}

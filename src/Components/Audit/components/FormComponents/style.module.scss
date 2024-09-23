@@ -1,0 +1,218 @@
+@import "../../assets/styles/colors";
+
+.formComponetsContainer {
+  display: flex;
+  margin-top: 10px;
+  @media (min-width: 500px) and (max-width: 700px) {
+    display: block;
+  }
+
+  @media (min-width: 300px) and (max-width: 700px) {
+    display: block;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar {
+    height: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color_blue;
+    border-radius: 10px;
+    height: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .formBuilderCompoents {
+    padding: 10px;
+    max-width: 220px;
+    width: 100%;
+    background-color: $color_dark_skyblue;
+    border-radius: 10px;
+    // height: 400px;
+  }
+
+  .itemList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .inputButtons {
+      display: grid;
+      grid-template-columns: minmax(140px, 1fr);
+      justify-content: start;
+      // flex-flow: row wrap;
+      button {
+        margin: 8px 0 0;
+      }
+      svg {
+        font-size: 20px;
+        cursor: pointer;
+        background: $color_delete_light_gray;
+        color: $color_delete_gray;
+      }
+    }
+    .bottomButtonContainer {
+      margin-top: 3rem;
+      button {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .formInputs {
+    background-color: $color_ligh_skyblue;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 20px;
+
+    @media (min-width: 500px) and (max-width: 700px) {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+
+    .heading {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: $color_black_text;
+      padding: 1px 0px 1px 25px;
+      h2 {
+        margin-top: 10px !important;
+      }
+    }
+    .inputContainer {
+      padding: 0px 30px 15px 30px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 450px;
+
+      .formPreview {
+        float: right;
+        margin: 10px 10px;
+      }
+      .sectionName {
+        display: flex;
+        padding-top: 50px;
+
+        justify-content: space-between;
+        svg {
+          margin: 40px 5px;
+          font-size: 20px;
+          cursor: pointer;
+          background: $color_delete_light_gray;
+          color: $color_delete_gray;
+        }
+      }
+      .inputSection {
+        background-color: $color_white;
+        border-radius: 5px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px;
+        .fieldActions {
+          display: inline;
+          position: absolute;
+          top: 0;
+          right: 0;
+          svg {
+            font-size: 20px;
+            padding: 2px;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            background: $color_delete_light_gray;
+            color: $color_delete_gray;
+          }
+          .fieldActionsEditButton {
+            font-weight: 500;
+            font-size: 1.5rem;
+            background-color: transparent;
+          }
+          .fieldActionsEditButtonActive {
+            color: $color_primary;
+          }
+          .saveButton {
+            font-size: 12px;
+            font-weight: 500;
+            color: $color_primary;
+            // background-color: ;
+            border: none;
+            text-transform: uppercase;
+          }
+        }
+        .inputBody {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          border-bottom: 1px solid $color_light_border;
+          min-height: 100px;
+          height: auto;
+        }
+        .inputField {
+          padding: 20px;
+        }
+        .dateRange {
+          padding: 5px 0px 15px 20px;
+        }
+      }
+
+      .addNewContainer {
+        margin-top: 15px;
+        padding: 0px 10px 0px 8px;
+        display: flex;
+        span {
+          margin: 5px;
+        }
+
+        svg {
+          font-size: 25px;
+          color: $color_primary;
+          cursor: pointer;
+        }
+        .border {
+          border-top: 2px dashed $color_ligh_skyblue;
+          margin-bottom: 10px;
+        }
+      }
+
+      .addNewSection {
+        margin-top: 10px;
+        background-color: $color_white;
+        border-radius: 10px;
+        padding: 8px 10px 0px 20px;
+        display: flex;
+        cursor: pointer;
+
+        p {
+          margin-top: 2px;
+        }
+        svg {
+          font-size: 25px;
+          color: $color_primary;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.saveTemplate {
+  button {
+    margin-top: 20px;
+  }
+}
+.smallInputField {
+  max-width: 100% !important;
+  min-width: 50px !important;
+  overflow: hidden;
+}
+.smallSelectField {
+  max-width: 100% !important;
+  min-width: 80px !important;
+  width: 100%;
+}
+.labelSmall {
+  font-size: 12px;
+  color: $color_black_text;
+}
